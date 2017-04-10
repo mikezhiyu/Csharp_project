@@ -1,15 +1,17 @@
 
 
 ---Apr. 10, Elmira,
-
+WILL DO IN THE NEXT 24 HOURS:
    1) upgrade the proposal 
    2) check visual studio version compatibility
    3) make git works fine with the team member 
    4) learn more about trello and git version control
    5) Install the Point of sale management system to understand the bussines
+
+    
    
 --- Apr. 10, mike,
-   
+WILL DO IN THE NEXT 24 HOURS:   
    1)  upgrade the proposal and database design
    2)  Search more materials for inventory system 
    3)  make git works fine with the team member 

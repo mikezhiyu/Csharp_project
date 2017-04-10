@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MikeEliProject.Properties
+namespace ShoppingCartProject.Properties
 {
 
 

@@ -1,0 +1,13 @@
+I:\Elmira\Winter Semester\DotNetProject\Csharp_project\ShoppingCartProject\bin\Debug\ShoppingCartProject.exe.config
+I:\Elmira\Winter Semester\DotNetProject\Csharp_project\ShoppingCartProject\bin\Debug\ShoppingCartProject.exe
+I:\Elmira\Winter Semester\DotNetProject\Csharp_project\ShoppingCartProject\bin\Debug\ShoppingCartProject.pdb
+I:\Elmira\Winter Semester\DotNetProject\Csharp_project\ShoppingCartProject\obj\Debug\ShoppingCartProject.csprojResolveAssemblyReference.cache
+I:\Elmira\Winter Semester\DotNetProject\Csharp_project\ShoppingCartProject\obj\Debug\MainWindow.baml
+I:\Elmira\Winter Semester\DotNetProject\Csharp_project\ShoppingCartProject\obj\Debug\MainWindow.g.cs
+I:\Elmira\Winter Semester\DotNetProject\Csharp_project\ShoppingCartProject\obj\Debug\App.g.cs
+I:\Elmira\Winter Semester\DotNetProject\Csharp_project\ShoppingCartProject\obj\Debug\ShoppingCartProject_MarkupCompile.cache
+I:\Elmira\Winter Semester\DotNetProject\Csharp_project\ShoppingCartProject\obj\Debug\ShoppingCartProject.g.resources
+I:\Elmira\Winter Semester\DotNetProject\Csharp_project\ShoppingCartProject\obj\Debug\ShoppingCartProject.Properties.Resources.resources
+I:\Elmira\Winter Semester\DotNetProject\Csharp_project\ShoppingCartProject\obj\Debug\ShoppingCartProject.csproj.GenerateResource.Cache
+I:\Elmira\Winter Semester\DotNetProject\Csharp_project\ShoppingCartProject\obj\Debug\ShoppingCartProject.exe
+I:\Elmira\Winter Semester\DotNetProject\Csharp_project\ShoppingCartProject\obj\Debug\ShoppingCartProject.pdb

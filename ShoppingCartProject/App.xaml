@@ -1,4 +1,4 @@
-﻿<Application x:Class="MikeEliProject.App"
+﻿<Application x:Class="ShoppingCartProject.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="MainWindow.xaml">

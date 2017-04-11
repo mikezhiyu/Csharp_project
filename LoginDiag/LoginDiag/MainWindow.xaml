@@ -1,0 +1,15 @@
+﻿<Window x:Class="LoginDiag.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="247*"/>
+            <ColumnDefinition Width="271*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Login " HorizontalAlignment="Left" Margin="70,207,0,0" VerticalAlignment="Top" Width="108"/>
+        <TextBox Name="TextBlockName" HorizontalAlignment="Left" Height="146" Margin="70,10,0,0" TextWrapping="Wrap" Text="Welcome to POS system" VerticalAlignment="Top" Width="352" Grid.ColumnSpan="2" Cursor="No" FontSize="48" FontFamily="Segoe WP Semibold" FontWeight="Bold" Background="#FF5376E0" TextAlignment="Center"/>
+        <Button Content="Register" Grid.Column="1" HorizontalAlignment="Left" Margin="48.8,207,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click"/>
+
+    </Grid>
+</Window>

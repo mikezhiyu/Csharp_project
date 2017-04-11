@@ -3,10 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="login" Height="300" Width="400" Background="#FF3F418C">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF9C7171" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
 
         <TextBlock Height="23" HorizontalAlignment="Left" Margin="10,10,0,0" Name="LoginHeading" Text="Login:" VerticalAlignment="Top" FontSize="17" FontStretch="ExtraCondensed"/>
 
-        <TextBlock Height="50" HorizontalAlignment="Left" Margin="43,33,0,0" Name="textBlockHeading" VerticalAlignment="Top" FontSize="12" FontStyle="Italic" Padding="5" Width="309">
+        <TextBlock Height="50" HorizontalAlignment="Left" Margin="43,33,0,0" Name="textBlockHeading" VerticalAlignment="Top" FontSize="12" FontStyle="Italic" Padding="5" Width="309" Foreground="#FFBFAAAA">
 
             Note: Please login in with your email and password. If you are new on this site then <LineBreak /><!--line break-->
 
@@ -26,15 +32,15 @@
 
         </TextBlock>
 
-        <TextBlock Height="23" HorizontalAlignment="Left" Margin="51,121,0,0" Name="textBlock1" Text="Email" VerticalAlignment="Top" Width="67" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="36,105,0,0" Name="textBlock1" Text="Email" VerticalAlignment="Top" Width="67" FontSize="18" />
 
-        <TextBlock Height="23" HorizontalAlignment="Left" Margin="36,168,0,0" Name="textBlock2" Text="Password" VerticalAlignment="Top" Width="77" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="26,168,0,0" Name="textBlock2" Text="Password" VerticalAlignment="Top" Width="77" FontSize="18" />
 
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="118,115,0,0" Name="textBoxEmail" VerticalAlignment="Top" Width="247" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="118,105,0,0" Name="textBoxEmail" VerticalAlignment="Top" Width="247" />
 
         <PasswordBox Height="23" HorizontalAlignment="Left" Margin="118,168,0,0" Name="passwordBox1" VerticalAlignment="Top" Width="247" />
 
-        <Button Content="Login" Height="23" HorizontalAlignment="Left" Margin="171,209,0,0" Name="button1" VerticalAlignment="Top" Width="104" Click="button1_Click" />
+        <Button Content="Login" Height="30" HorizontalAlignment="Left" Margin="171,209,0,0" Name="button1" VerticalAlignment="Top" Width="82" Click="button1_Click" FontSize="18" />
 
         <TextBlock Height="23" HorizontalAlignment="Left" x:Name ="errormessage" VerticalAlignment="Top" Width="247" Margin="118,253,0,0"  OpacityMask="Crimson" Foreground="#FFE5572C"  />
 

@@ -13,7 +13,7 @@
             <ColumnDefinition Width="247*"/>
             <ColumnDefinition Width="271*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="Login " HorizontalAlignment="Left" Margin="107,163,0,0" VerticalAlignment="Top" Width="108" Click="loginClick" Background="#FFBD4040" RenderTransformOrigin="0.5,0.5" BorderThickness="3">
+        <Button Content="Login " HorizontalAlignment="Left" Margin="89,182,0,0" VerticalAlignment="Top" Width="140" Click="loginClick" Background="#FFBD4040" RenderTransformOrigin="0.5,0.5" BorderThickness="3" Height="36" FontSize="20" FontWeight="Bold">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="1" ScaleX="1"/>
@@ -23,8 +23,8 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <TextBox Name="TextBlockName" HorizontalAlignment="Left" Height="113" Margin="70,10,0,0" TextWrapping="Wrap" Text="Welcome to POS system" VerticalAlignment="Top" Width="352" Grid.ColumnSpan="2" Cursor="No" FontSize="40" FontFamily="Tahoma" FontWeight="Bold" Background="#FFE98744" TextAlignment="Center" UndoLimit="98" Foreground="#FF444841" BorderThickness="5"/>
-        <Button Content="Register" Grid.Column="1" HorizontalAlignment="Left" Margin="41.8,163,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click" Foreground="#FF160F0F" Background="#FFB14242" BorderThickness="3"/>
+        <TextBox Name="TextBlockName" HorizontalAlignment="Left" Height="113" Margin="80,35,0,0" TextWrapping="Wrap" Text="Welcome to POS system" VerticalAlignment="Top" Width="352" Grid.ColumnSpan="2" Cursor="No" FontSize="40" FontFamily="Tahoma" FontWeight="Bold" Background="#FFE98744" TextAlignment="Center" UndoLimit="98" Foreground="#FF444841" BorderThickness="5"/>
+        <Button Content="Register" Grid.Column="1" HorizontalAlignment="Left" Margin="41,182,0,0" VerticalAlignment="Top" Width="131" Click="Button_Click" Foreground="#FF160F0F" Background="#FFB14242" BorderThickness="3" Height="36" FontSize="20" FontWeight="Bold"/>
 
     </Grid>
 </Window>

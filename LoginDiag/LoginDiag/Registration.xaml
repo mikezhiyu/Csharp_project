@@ -51,7 +51,7 @@
 
         <!--end Button as a Link button using style-->
 
-        <Grid Margin="31,0,29,23" Background="White" Height="264" VerticalAlignment="Bottom">
+        <Grid Margin="21,0,40,24" Background="White" Height="264" VerticalAlignment="Bottom">
 
             <Grid.RowDefinitions>
 
@@ -63,17 +63,15 @@
 
             <TextBlock Height="20" HorizontalAlignment="Left" Margin="67,0,0,0" x:Name ="errormessage" VerticalAlignment="Top" Width="247"  OpacityMask="Crimson" Foreground="#FFE5572C" />
 
-            <TextBlock Height="23" HorizontalAlignment="Left" Margin="67,20,0,0" Name="textBlockFirstname" Text="First Name:" VerticalAlignment="Top" Width="110" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="37,20,0,0" Name="textBlockFirstname" Text="First Name:" VerticalAlignment="Top" Width="110" />
 
-            <TextBlock Height="23" HorizontalAlignment="Left" Margin="67,50,0,0" Name="textBlockLastName" Text="Last Name:" VerticalAlignment="Top" Width="110" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="37,50,0,0" Name="textBlockLastName" Text="Last Name:" VerticalAlignment="Top" Width="110" />
 
-            <TextBlock Height="23" HorizontalAlignment="Left" Margin="67,80,0,0" Name="textBlockEmailId" Text="EmailId" VerticalAlignment="Top" Width="110" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="37,80,0,0" Name="textBlockEmailId" Text="EmailId" VerticalAlignment="Top" Width="110" />
 
-            <TextBlock Height="23" HorizontalAlignment="Left" Margin="67,107,0,0" Name="textBlockPassword" Text="Password:" VerticalAlignment="Top" Width="110"  />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="37,107,0,0" Name="textBlockPassword" Text="Password:" VerticalAlignment="Top" Width="110"  />
 
-            <TextBlock Height="23" HorizontalAlignment="Left" Margin="67,136,0,0" Name="textBlockConfirmPwd" Text="ConfirmPassword:" VerticalAlignment="Top" Width="110" Grid.RowSpan="2" />
-
-            <TextBlock Height="23" HorizontalAlignment="Left" Margin="67,166,0,0" Name="textBlockAddress" Text="Address" VerticalAlignment="Top" Width="110" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="34,135,0,0" Name="textBlockConfirmPwd" Text="ConfirmPassword:" VerticalAlignment="Top" Width="130" />
 
 
 
@@ -89,17 +87,15 @@
 
             <!--For password-->
 
-            <PasswordBox Height="23" HorizontalAlignment="Left" Margin="183,136,0,0" Name="passwordBoxConfirm" VerticalAlignment="Top" Width="222" />
+            <PasswordBox Height="23" HorizontalAlignment="Left" Margin="183,135,0,0" Name="passwordBoxConfirm" VerticalAlignment="Top" Width="222" />
 
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="183,0,0,66" Name="textBoxAddress" VerticalAlignment="Bottom" Width="222" />
+            <Button Content="Submit" Height="23" HorizontalAlignment="Left" Margin="183,184,0,0" Name="Submit" VerticalAlignment="Top" Width="70" Click="Submit_Click" />
 
-            <Button Content="Submit" Height="23" HorizontalAlignment="Left" Margin="183,204,0,0" Name="Submit" VerticalAlignment="Top" Width="70" Click="Submit_Click" />
+            <Button Content="Reset" Height="23" HorizontalAlignment="Left" Margin="259,184,0,0" Name="button2" VerticalAlignment="Top" Width="70" Click="button2_Click" />
 
-            <Button Content="Reset" Height="23" HorizontalAlignment="Left" Margin="259,204,0,0" Name="button2" VerticalAlignment="Top" Width="70" Click="button2_Click" />
-
-            <Button Content="Cancel" Height="23" HorizontalAlignment="Right" Margin="0,204,60,0" Name="button3" VerticalAlignment="Top" Width="70" Click="button3_Click" />
+            <Button Content="Cancel" Height="23" HorizontalAlignment="Right" Margin="0,184,59.8,0" Name="button3" VerticalAlignment="Top" Width="70" Click="button3_Click" />
 
         </Grid>
 
     </Grid>
-    </Window>
+</Window>

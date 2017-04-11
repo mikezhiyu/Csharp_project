@@ -74,8 +74,6 @@ namespace LoginDiag
 
             textBoxEmail.Text = "";
 
-            textBoxAddress.Text = "";
-
             passwordBox1.Password = "";
 
             passwordBoxConfirm.Password = "";
@@ -157,9 +155,9 @@ namespace LoginDiag
 
                     errormessage.Text = "";
 
-                    string address = textBoxAddress.Text;
+                    string address = "";
 
-                    SqlConnection con = new SqlConnection("Data Source=TESTPURU;Initial Catalog=Data;User ID=sa;Password=wintellect");
+                    SqlConnection con = new SqlConnection("Data Source=TEST;Initial Catalog=Data;User ID=sa;Password=wintellect");
 
                     con.Open();
 

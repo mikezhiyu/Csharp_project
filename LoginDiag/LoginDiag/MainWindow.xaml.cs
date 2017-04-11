@@ -25,7 +25,19 @@ namespace LoginDiag
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+             Registration Regi = new Registration();
+            Regi.Show();
         }
+
+
+        private void loginClick(object sender, RoutedEventArgs e)
+        {
+            login login = new login();
+
+            login.Show();
+
+            Close();
+        }
+
     }
 }

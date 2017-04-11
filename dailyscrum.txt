@@ -27,6 +27,7 @@ DID SINCE LAST SCRUM:
 WILL DO IN THE NEXT 24 HOURS
 1) Make the main Window Responsive
 2) Bind the categories button and images
+3) Learn more bout GridSplitter and stackPannel
 
 WHERE I NEED HELP IS...
 1. I need help finding an example how to bind the category button and grid view to show the related items
@@ -40,6 +41,7 @@ DID SINCE LAST SCRUM:
 WILL DO IN THE NEXT 24 HOURS
 1)Improve Login System
 2)Combine files together(Main Window and login System)
+3)Learn more bout GridSplitter and stackPannel
 
 
 WHERE I NEED HELP IS...

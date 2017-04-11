@@ -1,8 +1,81 @@
 ﻿<Window x:Class="PointOfSaleManagementSys.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="700" Width="1000">
     <Grid>
-        
+        <ListView Background="YellowGreen" Margin="10,10,483,300" Name="LvItems" Width="500">
+
+            <ListView.View >
+                <GridView>
+                    <GridViewColumn Header="ID" Width="40" />
+                    <GridViewColumn Header="Product" Width="100" />
+                    <GridViewColumn Header="Qty" Width="70" />
+                    <GridViewColumn Header="UnitPrice" Width="80" />
+                    <GridViewColumn Header="Discount" Width="80" />
+                    <GridViewColumn Header="Total" Width="60" />
+                    <GridViewColumn Header="Tax" Width="60" />
+
+                </GridView>
+
+            </ListView.View>
+        </ListView>
+        <TabControl BorderBrush="Gainsboro" HorizontalAlignment="Left" Height="309" Margin="541,60,0,0" VerticalAlignment="Top" Width="407">
+
+            <TabControl.Resources>
+                <Style TargetType="TabItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TabItem">
+                                <Border Name="Border" BorderThickness="1,1,1,0" BorderBrush="Gainsboro" CornerRadius="4,4,0,0" Margin="2,0">
+                                    <ContentPresenter x:Name="ContentSite"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"
+                                        ContentSource="Header"
+                                        Margin="10,2"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter TargetName="Border" Property="Background" Value="LightSkyBlue" />
+                                    </Trigger>
+                                    <Trigger Property="IsSelected" Value="False">
+                                        <Setter TargetName="Border" Property="Background" Value="GhostWhite" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TabControl.Resources>
+            <TabItem Header="POS Buttons">
+
+            </TabItem>
+            <TabItem Header="Invoice Data" />
+
+        </TabControl>
+
+
+        <Button FontWeight="Bold" Background="Aqua"  BorderBrush="Gainsboro" Content="Hot Drink" HorizontalAlignment="Left" Margin="541,6,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button  FontWeight="Bold" Background="Yellow" BorderBrush="Gainsboro" Content="Beers" HorizontalAlignment="Left" Margin="621,6,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button  FontWeight="Bold" Background="Brown" BorderBrush="Gainsboro" Content="Dessert" HorizontalAlignment="Left" Margin="701,6,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button  FontWeight="Bold" Background="Green" BorderBrush="Gainsboro" Content="Lunch" HorizontalAlignment="Left" Margin="781,6,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button  FontWeight="Bold" Background="Red" BorderBrush="Gainsboro" Content="Dinner" HorizontalAlignment="Left" Margin="861,6,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Grid Background="Bisque" HorizontalAlignment="Left" Height="249" Margin="10,374,0,0" VerticalAlignment="Top" Width="499">
+            <Label FontWeight="Black" Content="TAX $" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.46,0.185" Height="38" Width="51"/>
+            <Label  FontWeight="Black" Content="PAID $" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top"/>
+            <Label  FontWeight="Black" Content="TYPE" HorizontalAlignment="Left" Margin="10,183,0,0" VerticalAlignment="Top"/>
+            <TextBox  HorizontalAlignment="Left" Height="38" Margin="61,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170"/>
+            <TextBox   HorizontalAlignment="Left" Height="34" Margin="61,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170"/>
+            <Label  FontWeight="Black" Content="TOTAL" HorizontalAlignment="Left" Margin="255,32,0,0" VerticalAlignment="Top"/>
+            <TextBox  HorizontalAlignment="Left" Height="38" Margin="319,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170"/>
+            <ComboBox FontWeight="Black"  HorizontalAlignment="Left" Margin="61,187,0,0" VerticalAlignment="Top" Width="170">
+                <ComboBoxItem FontWeight="Black" IsSelected="True">CASH</ComboBoxItem>
+                <ComboBoxItem  FontWeight="Black">CREDIT CART</ComboBoxItem>
+            </ComboBox>
+        </Grid>
+        <Button FontWeight="Bold" Content="ADD PRODUCT" HorizontalAlignment="Left" Margin="553,374,0,0" VerticalAlignment="Top" Width="383" Height="40"/>
+        <Button  FontWeight="Bold" Content="DELETE PRODUCT" HorizontalAlignment="Left" Margin="553,438,0,0" VerticalAlignment="Top" Width="383" Height="40"/>
+        <Button  FontWeight="Bold" Content="CHECKOUT" HorizontalAlignment="Left" Margin="553,503,0,0" VerticalAlignment="Top" Width="383" Height="40"/>
+        <Button  FontWeight="Bold" Content="PRINT INVOICE" HorizontalAlignment="Left" Margin="553,568,0,0" VerticalAlignment="Top" Width="383" Height="40"/>
+
     </Grid>
 </Window>

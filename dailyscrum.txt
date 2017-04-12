@@ -73,9 +73,10 @@ DID SINCE LAST SCRUM:
 
 
 WILL DO IN THE NEXT 24 HOURS
-1)Create Tables in Database
+1)Create Tables in Database stored in azure
 2)Bind categories to show Items
-3) GridSplitter
+3)GridSplitter
+4)learn how to make constraint in azure sql database
 
 WHERE I NEED HELP IS
 1) Source Tree Issues

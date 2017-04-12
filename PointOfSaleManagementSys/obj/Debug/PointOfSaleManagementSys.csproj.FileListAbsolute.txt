@@ -16,12 +16,6 @@ D:\Elmira-IPD\DotNetProject\Csharp_project\PointOfSaleManagementSys\obj\Debug\Po
 D:\Elmira-IPD\DotNetProject\Csharp_project\PointOfSaleManagementSys\obj\Debug\PointOfSaleManagementSys.pdb
 D:\Elmira-IPD\DotNetProject\Csharp_project\PointOfSaleManagementSys\bin\Debug\PointOfSaleManagementSys.exe
 D:\Elmira-IPD\DotNetProject\Csharp_project\PointOfSaleManagementSys\bin\Debug\PointOfSaleManagementSys.pdb
-D:\Elmira-IPD\DotNetProject\Csharp_project\PointOfSaleManagementSys\bin\Debug\mscorlib.dll
-D:\Elmira-IPD\DotNetProject\Csharp_project\PointOfSaleManagementSys\bin\Debug\normidna.nlp
-D:\Elmira-IPD\DotNetProject\Csharp_project\PointOfSaleManagementSys\bin\Debug\normnfc.nlp
-D:\Elmira-IPD\DotNetProject\Csharp_project\PointOfSaleManagementSys\bin\Debug\normnfd.nlp
-D:\Elmira-IPD\DotNetProject\Csharp_project\PointOfSaleManagementSys\bin\Debug\normnfkc.nlp
-D:\Elmira-IPD\DotNetProject\Csharp_project\PointOfSaleManagementSys\bin\Debug\normnfkd.nlp
 D:\Elmira-IPD\DotNetProject\Csharp_project\PointOfSaleManagementSys\obj\Debug\PointOfSaleManagementSys.csprojResolveAssemblyReference.cache
 D:\Elmira-IPD\DotNetProject\Csharp_project\PointOfSaleManagementSys\obj\Debug\MainWindow.baml
 D:\Elmira-IPD\DotNetProject\Csharp_project\PointOfSaleManagementSys\obj\Debug\MainWindow.g.cs
@@ -43,3 +37,5 @@ E:\POS_system\project_csharp\Csharp_project\PointOfSaleManagementSys\obj\Debug\P
 E:\POS_system\project_csharp\Csharp_project\PointOfSaleManagementSys\obj\Debug\PointOfSaleManagementSys.g.resources
 E:\POS_system\project_csharp\Csharp_project\PointOfSaleManagementSys\obj\Debug\PointOfSaleManagementSys.Properties.Resources.resources
 E:\POS_system\project_csharp\Csharp_project\PointOfSaleManagementSys\obj\Debug\PointOfSaleManagementSys.csproj.GenerateResource.Cache
+D:\Elmira-IPD\DotNetProject\Csharp_project\PointOfSaleManagementSys\bin\Debug\nunit.framework.dll
+D:\Elmira-IPD\DotNetProject\Csharp_project\PointOfSaleManagementSys\bin\Debug\nunit.framework.xml

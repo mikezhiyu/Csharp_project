@@ -39,3 +39,5 @@ E:\POS_system\project_csharp\Csharp_project\PointOfSaleManagementSys\obj\Debug\P
 E:\POS_system\project_csharp\Csharp_project\PointOfSaleManagementSys\obj\Debug\PointOfSaleManagementSys.csproj.GenerateResource.Cache
 D:\Elmira-IPD\DotNetProject\Csharp_project\PointOfSaleManagementSys\bin\Debug\nunit.framework.dll
 D:\Elmira-IPD\DotNetProject\Csharp_project\PointOfSaleManagementSys\bin\Debug\nunit.framework.xml
+I:\Elmira\Winter Semester\DotNetProject\Csharp_project\PointOfSaleManagementSys\bin\Debug\nunit.framework.dll
+I:\Elmira\Winter Semester\DotNetProject\Csharp_project\PointOfSaleManagementSys\bin\Debug\nunit.framework.xml

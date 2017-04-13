@@ -48,4 +48,56 @@ WHERE I NEED HELP IS...
 1) Have to fix SourceTree
 
 
+---Apr. 12 Elmira
+DID SINCE LAST SCRUM:
+1) Impemented view and GridSplitter(SomwHow) in man window
+2) Found pictures to use  in catregory
+3) learned more about gridSplitter
+
+will do :
+1) bind category and tab control
+2) grid splitter
+3) Create Classes
+
+help:
+1) binding
+2) Grid Splitter
+
+
+--- Apr. 12 Mike
+
+DID SINCE LAST SCRUM:
+1)Revised Proposal
+2)Learned more about gridsplitter
+3)Create one table in Azure
+
+
+WILL DO IN THE NEXT 24 HOURS
+1)Create Tables in Database stored in azure
+2)Bind categories to show Items
+3)GridSplitter
+4)learn how to make constraint in azure sql database
+
+WHERE I NEED HELP IS
+1) Source Tree Issues
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

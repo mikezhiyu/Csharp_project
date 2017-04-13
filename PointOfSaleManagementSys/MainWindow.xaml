@@ -55,10 +55,10 @@
 
 
             <Button Click="ButtonAdd_Click" FontWeight="Bold" Content="ADD PRODUCT" HorizontalAlignment="Left" Margin="710,754,0,0" VerticalAlignment="Top" Width="156" Height="40"/>
-            <Button  FontWeight="Bold" Content="DELETE PRODUCT" HorizontalAlignment="Left" Margin="926,754,0,0" VerticalAlignment="Top" Width="156" Height="40"/>
-            <Button  FontWeight="Bold" Content="CHECKOUT" HorizontalAlignment="Left" Margin="926,814,0,0" VerticalAlignment="Top" Width="156" Height="40"/>
-            <Button  FontWeight="Bold" Content="PRINT INVOICE" HorizontalAlignment="Left" Margin="710,814,0,0" VerticalAlignment="Top" Width="156" Height="39"/>
-
+            <Button  Click="ButtonDelete_Click" FontWeight="Bold" Content="DELETE PRODUCT" HorizontalAlignment="Left" Margin="914,754,0,0" VerticalAlignment="Top" Width="156" Height="40"/>
+            <Button Click="ButtonChekOut_Click" FontWeight="Bold" Content="CHECKOUT" HorizontalAlignment="Left" Margin="914,814,0,0" VerticalAlignment="Top" Width="156" Height="40"/>
+            <Button Click="ButtonPrint_Click" FontWeight="Bold" Content="PRINT INVOICE" HorizontalAlignment="Left" Margin="710,814,0,0" VerticalAlignment="Top" Width="156" Height="39"/>
+            <Button  FontWeight="Bold" Content="Reset" HorizontalAlignment="Left" Margin="1131,754,0,0" VerticalAlignment="Top" Width="156" Height="39"/>
             <ListView Name="LvShopping" Background="LightYellow" HorizontalAlignment="Left" Height="580" VerticalAlignment="Top" Width="674" Margin="0,10,0,0" FontWeight="Bold" >
                 <ListView.View >
                     <GridView>
@@ -103,7 +103,7 @@
                         </Setter>
                     </Style>
                 </TabControl.Resources>
-                <TabItem Header="Menu">
+                <TabItem Header="Menu" Name="tab1">
                     <Grid>
                         <ListView Name="LvItems" HorizontalAlignment="Left" Height="304" Margin="0,0,-190,0" VerticalAlignment="Top" Width="584" FontSize="16" FontFamily="{DynamicResource {x:Static SystemFonts.CaptionFontFamilyKey}}" FontWeight="Bold" >
                             <ListView.Background>
@@ -112,6 +112,7 @@
                         </ListView>
                     </Grid>
                 </TabItem>
+                <TabItem Header="Invoice" Name="tab2"></TabItem>
                
 
             </TabControl>
@@ -123,6 +124,7 @@
             <Label Content="Hot Drink" HorizontalAlignment="Left" Margin="767,352,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold" />
             <Label Content="Dinner" HorizontalAlignment="Left" Margin="985,352,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"/>
             <Label Content="Wine" HorizontalAlignment="Left" Margin="1196,352,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"/>
+            
 
 
 

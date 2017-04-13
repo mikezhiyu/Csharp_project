@@ -20,6 +20,18 @@ namespace PointOfSaleManagementSys
     /// </summary>
     public partial class MainWindow : Window
     {
+        double[,] itemCost = new double[,]{
+                  /*{"Alexander keith ","Blond","BudWiser","Corona","lager","Staute"},
+                  {"Coffee","Green Tea","Tea", "Hot Chocolate","Cafe Latte","Cappuccino"}
+               ,{"Lasagna","Pasta","Pizza","Filet Mignon","Steak","Chicken Wing"},
+               {"Cheese Burger","General Tso","Koobide","Sushi","Ghormeh Sabzi","Poutine"},
+               {"Cheese Cake","Chocolate Cake","Tiramisu","Ice Cream Cake","Ginger Bread","Jelly"},
+               {"SYRAH","MERLOT","RIESLING","GEWÜRZTRAMINER","CHARDONNAY","PINOT NOIR"}*/
+        
+        };
+        
+        double iTax, iSubTotal, iTotal;
+        List<Shopping> shoppingList = new List<Shopping>();
         string[,] items = new string[,]{
                   {"Alexander keith ","Blond","BudWiser","Corona","lager","Staute"},
                   {"Coffee","Green Tea","Tea", "Hot Chocolate","Cafe Latte","Cappuccino"}
@@ -28,15 +40,12 @@ namespace PointOfSaleManagementSys
                {"Cheese Cake","Chocolate Cake","Tiramisu","Ice Cream Cake","Ginger Bread","Jelly"},
                {"SYRAH","MERLOT","RIESLING","GEWÜRZTRAMINER","CHARDONNAY","PINOT NOIR"}
         
-        
         };
-
+      
        
         public MainWindow()
         {
             InitializeComponent();
-          
-            
         }
         string currentItemText;
         int currentItemIndex;
@@ -69,16 +78,18 @@ namespace PointOfSaleManagementSys
         private void ItemList(int categoryId)
         {
             int id = categoryId;
+           
             List<string> itemList = new List<string>();
+           
             for (int i = 0; i < 6;  i++)
             {
                 itemList.Add(items[id, i]);
-                
-               
+              
             }
             LvItems.ItemsSource = itemList;
-           
         }
+
+
         private void ApplyDataBinding()
         {
            
@@ -88,12 +99,49 @@ namespace PointOfSaleManagementSys
         }
         private void ButtonAdd_Click(object sender, RoutedEventArgs e)
         {
+         
             currentItemText = LvItems.SelectedValue.ToString();
             currentItemIndex = LvItems.SelectedIndex;
+        
+            Shopping s = new Shopping(currentItemText, 1, 3, 4, 3, 1);
+             LvShopping.Items.Add(s);
 
-            LvShopping.Items.Add(currentItemText);
-           
+             int quantity = 0;
+             switch (currentItemText)
+             {
+                 case "Coffee":
+                     quantity++;
+                     break;
+                 case "Green Tea":
+                     break;
+                 case "Tea":
+                     break;
+                 case "Hot Chocolate":
+                     break;
+                 case "Cafe Latte":
+                     break;
+                 case "Cappuccino":
+                     break;
+                 
 
+
+             }
+          
+
+        }
+
+        private void ButtonPrint_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void ButtonDelete_Click(object sender, RoutedEventArgs e)
+        {
+            LvShopping.Items.RemoveAt(LvShopping.Items.IndexOf(LvShopping.SelectedItem));
+        }
+
+        private void ButtonChekOut_Click(object sender, RoutedEventArgs e)
+        {
 
         }
 

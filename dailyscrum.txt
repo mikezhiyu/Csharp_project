@@ -115,6 +115,21 @@ WHERE I NEED HELP IS
 1) GridSplitter
 
 
+--- Apr. 18 Mike
+
+DID SINCE LAST SCRUM:
+1)Implement database in programs
+2)Tried GridSplitter in many times 
+
+
+WILL DO IN THE NEXT 24 HOURS
+1)Using database in program
+2)finish Add Button to shopping List
+
+WHERE I NEED HELP IS
+1) GridSplitter
+
+
 
 
 

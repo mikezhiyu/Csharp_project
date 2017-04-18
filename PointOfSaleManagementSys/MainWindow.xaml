@@ -4,11 +4,52 @@
         Title="Point of Sale " Height="900" Width="1350"  WindowStartupLocation="CenterScreen"  WindowState="Minimized" >
 
     <Viewbox>
-        <Grid Width="auto">
+        <Grid Width="auto" Height="900">
+            <Grid Width="670" Height="900" Margin="0,10,629.2,-10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"  MinHeight="250"/>
+                    <RowDefinition Height="5" />
+                    <RowDefinition Height="*"  MinHeight="240"/>
+                </Grid.RowDefinitions>
+                <ListView Grid.Row="0" Name="LvShopping" Background="LightYellow" HorizontalAlignment="Left"
+                          VerticalAlignment="Top" Width="674" Height="557" Margin="-14,23,0,0" FontWeight="Bold" SelectionChanged="LvShopping_SelectionChanged" Grid.RowSpan="3" >
+                    <ListView.View >
+                        <GridView>
+                            <GridViewColumn  Header="ID" Width="50" DisplayMemberBinding="{Binding Path=ID}" />
+                            <GridViewColumn Header="Product" Width="110" DisplayMemberBinding="{Binding Path=ProductName}" />
+                            <GridViewColumn Header="Qty" Width="80"  DisplayMemberBinding="{Binding Path=Quantity}"  />
+                            <GridViewColumn Header="UnitPrice" Width="110"  DisplayMemberBinding="{Binding Path=UnitPrice}"   />
+                            <GridViewColumn Header="Discount" Width="120" DisplayMemberBinding="{Binding Path=Discount}"  />
+                            <GridViewColumn Header="Total" Width="90"  DisplayMemberBinding="{Binding Path=Total}" />
+                            <GridViewColumn Header="Tax" Width="110"  DisplayMemberBinding="{Binding Path=Tax}"  />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <GridSplitter Grid.Row="1" Height="5" HorizontalAlignment="Stretch" Background="Red" Margin="0,55.2,0,327" />
+
+                <Grid Grid.Row="2" Background="Bisque" HorizontalAlignment="Left" Height="245" Margin="0,0,-4,30" VerticalAlignment="Bottom" Width="674" >
+                    <Label FontWeight="Black" Content="TAX $" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.46,0.185" Height="38" Width="51"/>
+                    <Label  FontWeight="Black" Content="PAID $" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top"/>
+                    <Label  FontWeight="Black" Content="TYPE" HorizontalAlignment="Left" Margin="10,183,0,0" VerticalAlignment="Top"/>
+                    <TextBox  HorizontalAlignment="Left" Height="38" Margin="61,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226"/>
+                    <TextBox   HorizontalAlignment="Left" Height="34" Margin="61,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226"/>
+                    <Label  FontWeight="Black" Content="TOTAL" HorizontalAlignment="Left" Margin="353,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.854,0.885"/>
+                    <TextBox  HorizontalAlignment="Left" Height="38" Margin="438,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226"/>
+                    <ComboBox FontWeight="Black"  HorizontalAlignment="Left" Margin="61,187,0,0" VerticalAlignment="Top" Width="170">
+                        <ComboBoxItem FontWeight="Black" IsSelected="True">CASH</ComboBoxItem>
+                        <ComboBoxItem  FontWeight="Black">CREDIT CART</ComboBoxItem>
+                    </ComboBox>
+                </Grid>
+            </Grid>
 
 
 
 
+            <Button Click="ButtonAdd_Click" FontWeight="Bold" Content="ADD PRODUCT" HorizontalAlignment="Left" Margin="710,754,0,0" VerticalAlignment="Top" Width="156" Height="40"/>
+            <Button  Click="ButtonDelete_Click" FontWeight="Bold" Content="DELETE PRODUCT" HorizontalAlignment="Left" Margin="914,754,0,0" VerticalAlignment="Top" Width="156" Height="40"/>
+            <Button Click="ButtonChekOut_Click" FontWeight="Bold" Content="CHECKOUT" HorizontalAlignment="Left" Margin="914,814,0,0" VerticalAlignment="Top" Width="156" Height="40"/>
+            <Button Click="ButtonPrint_Click" FontWeight="Bold" Content="PRINT INVOICE" HorizontalAlignment="Left" Margin="710,814,0,0" VerticalAlignment="Top" Width="156" Height="39"/>
+            <Button  FontWeight="Bold" Content="Reset" HorizontalAlignment="Left" Margin="1131,754,0,0" VerticalAlignment="Top" Width="156" Height="39"/>
             <Button Click="ButtonHotDrink_Click" FontWeight="Bold" Background="Aqua"  BorderBrush="Gainsboro"  HorizontalAlignment="Left" Margin="710,210,0,0" VerticalAlignment="Top" Width="188" Height="134" FontStretch="SemiCondensed" OpacityMask="Black">
                 <Image Source="Images/coffee.jpg" Stretch="UniformToFill"  Height="128" Width="186"/>
             </Button>
@@ -35,48 +76,10 @@
             <Button Click="ButtonWine_Click" HorizontalAlignment="Left" Margin="1111,210,0,0" VerticalAlignment="Top"   Width="188" Height="134">
                 <Image Source="Images/wine.jpg" Stretch="UniformToFill"  Width="186" Height="128"/>
             </Button>
-            <Grid Background="Bisque" HorizontalAlignment="Left" Height="245" Margin="0,615,0,0" VerticalAlignment="Top" Width="674">
-                <Label FontWeight="Black" Content="TAX $" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.46,0.185" Height="38" Width="51"/>
-                <Label  FontWeight="Black" Content="PAID $" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top"/>
-                <Label  FontWeight="Black" Content="TYPE" HorizontalAlignment="Left" Margin="10,183,0,0" VerticalAlignment="Top"/>
-                <TextBox Name="TbTax"  HorizontalAlignment="Left" Height="38" Margin="61,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226"/>
-                <TextBox  Name="TbPaid" HorizontalAlignment="Left" Height="34" Margin="61,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226"/>
-                <Label  FontWeight="Black" Content="TOTAL" HorizontalAlignment="Left" Margin="353,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.854,0.885"/>
-                <TextBox Name="TbTotal"  HorizontalAlignment="Left" Height="38" Margin="438,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226"/>
-                <ComboBox  Name="ComboPayType" FontWeight="Black"  HorizontalAlignment="Left" Margin="61,187,0,0" VerticalAlignment="Top" Width="170">
-                    <ComboBoxItem FontWeight="Black" IsSelected="True">CASH</ComboBoxItem>
-                    <ComboBoxItem  FontWeight="Black">CREDIT CART</ComboBoxItem>
-                </ComboBox>
-
-            </Grid>
 
 
 
-
-
-            <Button Click="ButtonAdd_Click" FontWeight="Bold" Content="ADD PRODUCT" HorizontalAlignment="Left" Margin="710,754,0,0" VerticalAlignment="Top" Width="156" Height="40"/>
-            <Button  Click="ButtonDelete_Click" FontWeight="Bold" Content="DELETE PRODUCT" HorizontalAlignment="Left" Margin="914,754,0,0" VerticalAlignment="Top" Width="156" Height="40"/>
-            <Button Click="ButtonChekOut_Click" FontWeight="Bold" Content="CHECKOUT" HorizontalAlignment="Left" Margin="914,814,0,0" VerticalAlignment="Top" Width="156" Height="40"/>
-            <Button Click="ButtonPrint_Click" FontWeight="Bold" Content="PRINT INVOICE" HorizontalAlignment="Left" Margin="710,814,0,0" VerticalAlignment="Top" Width="156" Height="39"/>
-            <Button  FontWeight="Bold" Content="Reset" HorizontalAlignment="Left" Margin="1131,754,0,0" VerticalAlignment="Top" Width="156" Height="39"/>
-            <ListView Name="LvShopping" Background="LightYellow" HorizontalAlignment="Left" Height="580" VerticalAlignment="Top" Width="674" Margin="0,10,0,0" FontWeight="Bold" >
-                <ListView.View >
-                    <GridView>
-                        <GridViewColumn  Header="ID" Width="50" DisplayMemberBinding="{Binding Path=ID}" />
-                        <GridViewColumn Header="Product" Width="110" DisplayMemberBinding="{Binding Path=ProductName}" />
-                        <GridViewColumn Header="Qty" Width="80"  DisplayMemberBinding="{Binding Path=Quantity}"  />
-                        <GridViewColumn Header="UnitPrice" Width="110"  DisplayMemberBinding="{Binding Path=UnitPrice}"   />
-                        <GridViewColumn Header="Discount" Width="120" DisplayMemberBinding="{Binding Path=Discount}"  />
-                        <GridViewColumn Header="Total" Width="90"  DisplayMemberBinding="{Binding Path=Total}" />
-                        <GridViewColumn Header="Tax" Width="110"  DisplayMemberBinding="{Binding Path=Tax}"  />
-
-                    </GridView>
-
-                </ListView.View>
-
-            </ListView>
-
-            <TabControl Name="TabControl" BorderBrush="Gainsboro" HorizontalAlignment="Left" Height="333" Margin="710,387,0,0" VerticalAlignment="Top" Width="584">
+            <TabControl BorderBrush="Gainsboro" HorizontalAlignment="Left" Height="333" Margin="710,387,0,0" VerticalAlignment="Top" Width="584">
 
                 <TabControl.Resources>
                     <Style TargetType="TabItem">
@@ -112,11 +115,7 @@
                         </ListView>
                     </Grid>
                 </TabItem>
-                <TabItem   Header="Invoice" Name="tab2">
-                    <TextBlock Name="TBoxInvoice" TextWrapping="Wrap" Text="" Margin="0,0,0,0"/>
-
-                </TabItem>
-               
+                <TabItem Header="Invoice" Name="tab2"></TabItem>
 
 
             </TabControl>

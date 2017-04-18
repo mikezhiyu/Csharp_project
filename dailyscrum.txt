@@ -82,6 +82,38 @@ WHERE I NEED HELP IS
 1) Source Tree Issues
 
 
+--- Apr. 13 Elmira
+
+DID SINCE LAST SCRUM:
+1)Implemented pictures in Buttons
+2)Created classes for category and shoppingList
+3)watched tutorial About Point of Sale Online Application
+
+
+WILL DO IN THE NEXT 24 HOURS
+1)Implement Add button 
+2)Bind Shopping Class with shopping list View
+3)Implement Delete Button
+
+WHERE I NEED HELP IS
+1)GridSplitter 
+
+
+--- Apr. 13 Mike
+
+DID SINCE LAST SCRUM:
+1)Implement Add button
+2)Searched about GridSplitter
+
+
+WILL DO IN THE NEXT 24 HOURS
+1)Continue GridSplitter
+2)Add Button to shopping List
+3)Implement Delete Button
+
+WHERE I NEED HELP IS
+1) GridSplitter
+
 
 
 
